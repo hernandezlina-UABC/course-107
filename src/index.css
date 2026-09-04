@@ -1,0 +1,41 @@
+/* ---- Design tokens: change these to restyle the whole app ---- */
+:root {
+  /* Colors */
+  --color-primary: #ac187a;
+  --color-primary-dark: #ac187a;
+  --color-surface: #ffffff;
+  --color-background: #f4f7f9;
+  --color-text: #2c3038;
+  --color-text-muted: #6b7280;
+  --color-border: #e2e6ea;
+
+  /* Spacing */
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+
+  /* Shape and depth */
+  --radius: 8px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  /* Type */
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ---- Base styles ---- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+}
