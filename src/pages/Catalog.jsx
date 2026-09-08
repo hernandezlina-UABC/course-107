@@ -1,22 +1,25 @@
+import { useEffect, useState } from "react";
+import Product from "../components/Product";
+import DataService from "../services/dataService"
 function Catalog() {
+    const [products, setProducts] = useState([]);
+    //let products = [];
+
+
+    useEffect(() => {
+        //Load your data here
+        let service = new DataService();
+        let data = service.getProduct();
+        setProducts(data);
+    },[]); //means this only runs ONCE
+
     return (
         <div>
             <h1>Check our new products</h1>
+
+            {products.map(prod => <Product key={prod._id} data={prod} />)}
+
             
-            <div>
-                <img src="" alt="" />
-
-                <div>
-                    <h5>Product name</h5>
-                    <h6> $ Product price</h6>
-
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
-
-                    <button>Add to cart</button>
-                </div>
-            </div>
         </div>
     );
 }

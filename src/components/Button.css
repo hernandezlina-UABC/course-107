@@ -17,3 +17,11 @@
 .btn:active {
   transform: translateY(1px);
 }
+@media (min-width: 600px) {
+  .btn {grid-area: 1 / span 6;}
+  
+}
+
+@media (min-width: 768px) {
+  .btn {grid-area: 1 / span 6;}
+}
