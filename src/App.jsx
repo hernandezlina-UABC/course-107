@@ -10,7 +10,7 @@ function App() {
       <Catalog/>
 
       <main className="main-content">
-        <h1>Welcome to My Online Store</h1>
+        <h1>Welcome to Organika Store</h1>
         <p>Discover amazing products at incredible prices.</p>
       </main>
 
