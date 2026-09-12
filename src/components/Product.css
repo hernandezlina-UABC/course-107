@@ -1,3 +1,4 @@
+
 .card{
     border: solid 1px lightgray;
     width: 250px;
@@ -8,9 +9,10 @@
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: var(--space-md);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  flex-direction: row;
   gap: var(--space-sm);
+  margin-top: 5px;
 }
 
 .product img {
@@ -25,31 +27,18 @@
   font-size: 1.05rem;
 }
 
-
 .product-name{
     font-size: 18px;
     margin: 0px;
 }
-.product-price{
-    display: flex;
-  justify-content: space-between;
-  color: var(--color-text-muted);
-  font-size: 0.9rem;
-}
+
 .quantity-picker-container{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
- quantity-picker-container button{
-    background-color: black;
-    color: wheat;
-    border: 0px;
-    border-radius: 4px;
- }
- add-to-cart-btn{
-    background-color: black;
-    color: wheat;
+
+ .add-to-cart-btn{
     border: 0px;
     padding: 8px;
     border-radius: 4px;

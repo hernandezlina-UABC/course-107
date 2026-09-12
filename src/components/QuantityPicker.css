@@ -1,7 +1,9 @@
 .quantity-picker {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-sm);
+  margin: 8px;
 }
 
 .quantity-picker button {

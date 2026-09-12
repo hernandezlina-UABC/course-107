@@ -1,20 +1,29 @@
-import './Navbar.css';
+import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-brand">
-          <h1>My Online Store</h1>
+    <nav className="navbar navbar-expand-lg">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">Organika Store</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="#">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Catalog</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">About</a>
+            </li>
+          </ul>
         </div>
-        <ul className="navbar-nav">
-          <li><a href="#home" className="nav-link">Home</a></li>
-          <li><a href="#catalog" className="nav-link">Catalog</a></li>
-          <li><a href="#about" className="nav-link">About</a></li>
-        </ul>
       </div>
     </nav>
   );
 }
-
 export default Navbar;

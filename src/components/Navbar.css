@@ -1,13 +1,15 @@
 .navbar {
-  background-color: var(--color-primary);
-  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  background-color: #f0e0a8;
   padding: var(--space-md) 0;
   box-shadow: var(--shadow);
 }
 
+
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -21,11 +23,9 @@
 }
 
 .navbar-nav {
-  list-style: none;
   display: flex;
-  gap: var(--space-md);
-  margin: 0;
-  padding: 0;
+  justify-content: end;
+
 }
 
 .nav-link {
