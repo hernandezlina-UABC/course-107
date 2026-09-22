@@ -13,7 +13,7 @@ function Product(props) {
                     />
                     <div className="card-body">
                         <h5 className="card-title">{props.data.title}</h5>
-                        <h6 className="card-text"> {props.data.price}</h6>
+                        <h6 className="card-text"> $ {props.data.price}</h6>
 
                         <QuantityPicker/>
                         <button className="btn btn-success add-to-cart-btn">Add to cart</button>

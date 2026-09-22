@@ -15,7 +15,7 @@ function Catalog() {
       let data = service.getProduct();
       setProducts(data);
       setProductsToDisplay(data); //initially, display all data
-      let categoriesService = ["Organics", "Merch", "Dairy"];
+      let categoriesService = ["Rings", "Bracelets", "Necklaces", "Earrings"];
       setCategories(categoriesService);
     }, []); //means this only runs ONCE
   }
