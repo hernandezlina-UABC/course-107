@@ -1,5 +1,6 @@
 import "./Contact.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { IconBrandTelegram } from '@tabler/icons-react';
 
 function Contact() {
   return (
@@ -62,6 +63,7 @@ function Contact() {
           />
         </div>
         <button type="submit" className="btn btn-primary">
+          <IconBrandTelegram stroke={2} />
           Send
         </button>
       </div>

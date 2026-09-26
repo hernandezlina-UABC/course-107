@@ -6,11 +6,15 @@ function GlobalProvider(props) {
     const [cart, setCart] = useState([])
     const [user, setUser] = useState({name:"Lina", id:70})
 
+    function addProductToCart(newProduct) {
+        setCart([...cart, newProduct])
+    }
 
     return (
         <GlobalContext.Provider value={{
             cart: cart,
-            user: user
+            user: user,
+            addProductToCart: addProductToCart
         }}>
             {props.children}
         </GlobalContext.Provider>

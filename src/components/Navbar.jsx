@@ -2,7 +2,8 @@ import { Link } from "react-router";
 import { useContext } from "react";
 import GlobalContext from "../state/globalContext";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Navbar.css"
+import { IconShoppingCart } from '@tabler/icons-react';
+import "./Navbar.css";
 
 function Navbar() {
   const user = useContext(GlobalContext).user
@@ -46,10 +47,16 @@ function Navbar() {
         </div>
         </div>
 
+        <div className="d-flex justify-content-end gap-3">
 
-        <p className="text-white m-0">{user.name} - {user.id}</p>
+        <p className="text-white m-0 text-center pt-2">{user.name} - {user.id}</p>
+          <Link to="/cart" className="btn btn-outline-light">
+            <IconShoppingCart stroke={1}/>
+            Cart
+          </Link>
+        </div>
+        </div>
 
-      </div>
     </nav>
   );
 }
