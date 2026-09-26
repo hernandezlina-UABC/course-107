@@ -37,7 +37,7 @@ function Catalog() {
     setProductsToDisplay(list);
   }
   return (
-    <div>
+    <div className="mx-4">
       <h3 className="m-4">Check our new products</h3>
       <div className="d-grid gap-3 d-md-flex justify-content-center m-3">
           <button className="btn btn-outline-secondary" type="button" onClick={clearFilter}>All</button>

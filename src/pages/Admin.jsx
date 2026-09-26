@@ -51,7 +51,7 @@ function Admin() {
         setCategories(categoriesService);
     }
     return (
-        <div className="p-5">
+        <div className="mx-4 p-5">
             <h1>Store Administration</h1>
 
             <div className="d-flex gap-4">
@@ -124,10 +124,10 @@ function Admin() {
                             <>
                             <h4>Products List:</h4>
                             </>
-                            <ul className="list-group justify-content-between flex-row wid-3 text-start " style={{ width: "100%" }}>
+                            <ul className="row ps-0">
                                 {products.map((product) => (
-                                    <li key={product.title} className="list-group-item card w-80 p-0">
-                                        <img src={product.image_url} className="card-img-top mw-per" />
+                                    <li key={product.title} className="card col-md-4 p-0">
+                                        <img src={product.image_url} className="card-img-top mw-per" style={{ height: "250px",  width: "100%" }} />
                                         <h6 className="position-absolute 
                                                 top-0 end-0 m-2 me-3 text-dark fw-bold
                                                  rounded-3 shadow-sm border-0

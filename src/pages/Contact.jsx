@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Contact() {
   return (
-    <form className="m-5 bg-light p-5">
+    <form className="mx-4 m-5 bg-light p-5">
       <h1 className="m-4"> Contact Us for Personalize YOUR LEGACY</h1>
       <hr />
       <div className="row text-start mb-4">

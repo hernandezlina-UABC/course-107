@@ -19,8 +19,8 @@ function App() {
       <BrowserRouter>
         <div className="App d-flex flex-column min-vh-100">
           <Navbar />
-          <main className="flex-grow-1 mx-4">
-
+          
+          <main className="flex-grow-1">
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
@@ -30,8 +30,8 @@ function App() {
               <Route path='*' element={<NotFound />} />
             </Routes>
           </main>
-          <div className="justify-item-end">
 
+          <div className="justify-item-end">
             <Footer />
           </div>
         </div>

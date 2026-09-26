@@ -6,7 +6,7 @@ function About() {
     const user = useContext(GlobalContext).user
 
     return (
-        <div>
+        <div className="mx-4">
             <p> Hello I'm {user.name} from cohort {user.id} </p>
             <h1>Heritage Gold: A Legacy in Every Karat</h1>
             <p>At Heritage Gold, we believe that fine jewelry is not merely worn; it is passed down. Founded on the principle that true luxury stands the test of time, our house is dedicated to creating exceptional pieces that celebrate your most significant milestones. We design for the modern individual who respects tradition, offering a destination where the brilliance of ethically sourced diamonds meets the enduring warmth of solid 18-karat gold.</p>
