@@ -1,8 +1,8 @@
 /* ---- Design tokens: change these to restyle the whole app ---- */
 :root {
   /* Colors */
-  --color-primary: #f7cd59;
-  --color-primary-dark: #f7cd5a;
+  --color-primary: #ffda6a;
+  --color-primary-dark: #ffda6a;
   --color-surface: #ffffff;
   --color-background: #f4f7f9;
   --color-text: #2c3038;

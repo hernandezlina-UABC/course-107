@@ -2,9 +2,9 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="foote bg-black extra p-3">
       <div className="footer-container">
-        <p>&copy; 2026 My Online Store. All rights reserved.</p>
+        <p className='m-0'>&copy; 2026 My Online Store. All rights reserved.</p>
       </div>
     </footer>
   );

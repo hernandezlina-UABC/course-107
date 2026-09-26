@@ -28,7 +28,7 @@ function Contact() {
       </div>
       <div className="row g-3 mb-3 text-start">
         <div className="col-md-6">
-          <label htmlFor="inputEmail4" className="form-label">
+          <label className="form-label">
             Email address:
           </label>
           <input
@@ -43,7 +43,7 @@ function Contact() {
           </div>
         </div>
         <div className="col-md-6">
-          <label htmlFor="inputPassword4" className="form-label">
+          <label className="form-label">
             Phone number:{" "}
           </label>
           <input

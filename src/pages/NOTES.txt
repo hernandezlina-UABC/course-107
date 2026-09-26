@@ -1,0 +1,7 @@
+SESSION #3
+GLOBAL CONTEXT
+Context file: context is a JS object
+
+provider
+
+useContext 
